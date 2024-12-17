@@ -18,7 +18,7 @@ crear_grafico <- function(J_name, categoria_name, q_name) {
   
   # Data preparation
   main_directory <- "C:/Projects/ProductAvaility/Repository"
-
+  
   datos <- read_csv(paste0(main_directory,"/",
                            categoria_name,"/",
                            "J",J_name,"/",
@@ -73,17 +73,17 @@ crear_grafico <- function(J_name, categoria_name, q_name) {
          fill = "Alternatives\nExhausted\n(Number)",
          title = "") + 
     theme(
-      legend.key.width = unit(0.4, "cm"),  
-      legend.key.height = unit(0.4, "cm"),  
-      legend.text = element_text(size = 14), 
+      legend.key.width = unit(0.25, "cm"),  
+      legend.key.height = unit(0.25, "cm"),  
+      legend.text = element_text(size = 10), 
       legend.box.margin = margin(0, 0, 0, 0, "cm"),
       legend.margin = margin(0, 0, 0, 0, "cm"),
       legend.box.just = "center",
-      legend.title = element_text(size = 14),
+      legend.title = element_text(size = 12),
       legend.position = "bottom",
       legend.box = "vertical",
-      axis.title.x = element_text(size = 14),
-      axis.title.y = element_text(size = 14)
+      axis.title.x = element_text(size = 12),
+      axis.title.y = element_text(size = 12)
     ) +
     theme(
       panel.grid.major = element_blank(), 
@@ -153,7 +153,7 @@ for (j in valores_J) {
     for (q in valores_q[[which(valores_J == j)]]) {
 
       resultado <- crear_grafico(as.character(j), type_degree, as.character(q))
-      cat("J:", j, "Homogeneidad:", type_degree, "q:", q, "Resultado:", resultado, "\n")
+      
     }
   }
 }
