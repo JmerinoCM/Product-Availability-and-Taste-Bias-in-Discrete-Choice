@@ -12,7 +12,7 @@ The repository contains code files with specific abbreviations at the start of t
 
 | **Abbreviation** | **Description**                                                                 |
 |------------------|-------------------------------------------------------------------------------|
-| **BIAS**         | Bias of estimated β's as a percentage of the true β.                         |
+| **BIAS**         | Distribution of estimated β's.                         |
 | **POLOE**        | Probability of observing at least one exhaustion during the choice process.   |
 | **PONAE**        | Probability of a number of alternatives exhausted as the choice unfolds.      |
 
